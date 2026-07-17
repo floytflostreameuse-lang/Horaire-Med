@@ -10,7 +10,7 @@
   "lang": "fr-CA",
   "icons": [
     {
-      "src": "assets/icons/moon.svg",
+      "src": "moon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

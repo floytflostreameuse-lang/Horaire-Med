@@ -2,16 +2,16 @@ const STORAGE_KEY = 'lunaRecoveryApp_v3';
 const APP_VERSION = 4;
 
 const NAV_ITEMS = [
-  ['dashboard', 'Accueil', 'assets/icons/house.svg'],
-  ['todo', 'Todo list', 'assets/icons/check-square.svg'],
-  ['timeline', 'Timeline', 'assets/icons/hourglass-medium.svg'],
-  ['schedule', 'Horaire', 'assets/icons/calendar-dots.svg'],
-  ['meds', 'Médicaments', 'assets/icons/pill.svg'],
-  ['symptoms', 'Symptômes', 'assets/icons/person-arms-spread.svg'],
-  ['instructions', 'Instructions', 'assets/icons/moon.svg'],
-  ['history', 'Historique', 'assets/icons/check-square.svg'],
-  ['stats', 'Statistiques', 'assets/icons/chart-bar.svg'],
-  ['settings', 'Paramètres', 'assets/icons/gear.svg']
+  ['dashboard', 'Accueil', 'house.svg'],
+  ['todo', 'Todo list', 'check-square.svg'],
+  ['timeline', 'Timeline', 'hourglass-medium.svg'],
+  ['schedule', 'Horaire', 'calendar-dots.svg'],
+  ['meds', 'Médicaments', 'pill.svg'],
+  ['symptoms', 'Symptômes', 'person-arms-spread.svg'],
+  ['instructions', 'Instructions', 'moon.svg'],
+  ['history', 'Historique', 'check-square.svg'],
+  ['stats', 'Statistiques', 'chart-bar.svg'],
+  ['settings', 'Paramètres', 'gear.svg']
 ];
 
 const PAGE_META = {
@@ -424,7 +424,7 @@ function isWithinTracking(date) {
 function applyTheme() {
   document.documentElement.dataset.theme = state.theme;
   document.querySelectorAll('.theme-icon').forEach((icon) => {
-    icon.style.setProperty('--icon', `url('${state.theme === 'dark' ? 'assets/icons/sun.svg' : 'assets/icons/moon.svg'}')`);
+    icon.style.setProperty('--icon', `url('${state.theme === 'dark' ? 'sun.svg' : 'moon.svg'}')`);
   });
   document.querySelector('meta[name="theme-color"]').content = state.theme === 'dark' ? '#07101f' : '#edf2f7';
   document.getElementById('themeSwitch')?.classList.toggle('on', state.theme === 'dark');
@@ -678,7 +678,7 @@ function renderMedications() {
   document.getElementById('medicationCards').innerHTML = state.medications.map((medication) => `
     <article class="card med-card" style="--med-color:${medication.color}">
       <div class="med-card-top">
-        <span class="med-icon-wrap"><span class="ui-icon" style="--icon:url('assets/icons/pill.svg')"></span></span>
+        <span class="med-icon-wrap"><span class="ui-icon" style="--icon:url('pill.svg')"></span></span>
         <div><h3>${medication.name}</h3><span class="med-dose">${medication.doseSummary || `${medication.quantity} · ${medication.strength}`}</span></div>
         <span class="active-pill">${medication.scheduleType === 'prn' ? 'Au besoin' : 'Actif'}</span>
       </div>
@@ -922,7 +922,7 @@ function maybeNotify() {
   if (!soon) return;
   const key = `luna-notified-${soon.id}`;
   if (sessionStorage.getItem(key)) return;
-  new Notification(`Luna · ${soon.time}`, { body: `${soon.name} — ${soon.dose}`, icon: 'assets/icons/moon.svg' });
+  new Notification(`Luna · ${soon.time}`, { body: `${soon.name} — ${soon.dose}`, icon: 'moon.svg' });
   sessionStorage.setItem(key, '1');
 }
 

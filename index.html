@@ -7,7 +7,7 @@
   <meta name="description" content="Luna, suivi de récupération après l'extraction des dents de sagesse.">
   <title>Luna — Récupération post-opératoire</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="assets/icons/moon.svg" type="image/svg+xml">
+  <link rel="icon" href="moon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,13 +17,13 @@
   <div class="app-layout">
     <aside class="desktop-sidebar" aria-label="Navigation principale">
       <button class="brand" data-nav="dashboard" aria-label="Accueil Luna">
-        <span class="brand-orbit"><span class="ui-icon" style="--icon:url('assets/icons/moon.svg')"></span></span>
+        <span class="brand-orbit"><span class="ui-icon" style="--icon:url('moon.svg')"></span></span>
         <span><strong>LUNA</strong><small>Récupération</small></span>
       </button>
       <nav class="side-nav"></nav>
       <div class="sidebar-art" aria-hidden="true"></div>
       <button class="side-theme" id="desktopThemeToggle">
-        <span class="ui-icon theme-icon" style="--icon:url('assets/icons/sun.svg')"></span>
+        <span class="ui-icon theme-icon" style="--icon:url('sun.svg')"></span>
         <span>Changer de thème</span>
       </button>
     </aside>
@@ -36,11 +36,11 @@
         </div>
         <div class="topbar-actions">
           <button class="icon-button" id="notificationButton" aria-label="Notifications">
-            <span class="ui-icon" style="--icon:url('assets/icons/bell.svg')"></span>
+            <span class="ui-icon" style="--icon:url('bell.svg')"></span>
             <span class="notification-dot" id="notificationDot"></span>
           </button>
           <button class="icon-button" id="themeToggle" aria-label="Changer de thème">
-            <span class="ui-icon theme-icon" style="--icon:url('assets/icons/sun.svg')"></span>
+            <span class="ui-icon theme-icon" style="--icon:url('sun.svg')"></span>
           </button>
         </div>
       </header>
@@ -75,7 +75,7 @@
               <div class="countdown" id="countdown">—</div>
               <div class="progress-track"><span id="nextDoseProgress"></span></div>
               <button class="primary-button compact" id="takeNextDoseButton" hidden>
-                <span class="ui-icon" style="--icon:url('assets/icons/check-square.svg')"></span>
+                <span class="ui-icon" style="--icon:url('check-square.svg')"></span>
                 Marquer comme prise
               </button>
             </article>
@@ -176,7 +176,7 @@
               <h2>Médicaments</h2>
             </div>
             <button id="openMedicationModal" class="round-add" aria-label="Ajouter un médicament">
-              <span class="ui-icon" style="--icon:url('assets/icons/plus.svg')"></span>
+              <span class="ui-icon" style="--icon:url('plus.svg')"></span>
             </button>
           </div>
           <div class="med-legend">
@@ -234,8 +234,8 @@
         <section class="view" data-view="stats">
           <div class="view-heading"><div><p class="section-label">Résumé</p><h2>Statistiques</h2></div></div>
           <div class="stats-grid">
-            <article class="card stat-card"><span class="stat-icon"><span class="ui-icon" style="--icon:url('assets/icons/check-square.svg')"></span></span><p>Prises complétées</p><strong id="statCompleted">0</strong></article>
-            <article class="card stat-card"><span class="stat-icon"><span class="ui-icon" style="--icon:url('assets/icons/hourglass-medium.svg')"></span></span><p>Prises restantes</p><strong id="statRemaining">0</strong></article>
+            <article class="card stat-card"><span class="stat-icon"><span class="ui-icon" style="--icon:url('check-square.svg')"></span></span><p>Prises complétées</p><strong id="statCompleted">0</strong></article>
+            <article class="card stat-card"><span class="stat-icon"><span class="ui-icon" style="--icon:url('hourglass-medium.svg')"></span></span><p>Prises restantes</p><strong id="statRemaining">0</strong></article>
             <article class="card stat-card wide"><div><p>Adhésion au traitement</p><strong id="statRate">0%</strong></div><div class="large-ring" id="statRing"><span id="statRingLabel">0%</span></div></article>
             <article class="card stat-card wide"><div><p>Progression des 6 jours</p><strong id="statTreatment">0%</strong></div><div class="phase-track"><span id="treatmentBar"></span></div></article>
           </div>
@@ -261,7 +261,7 @@
                 <label>Réveil<input type="time" id="sleepEnd"></label>
               </div>
               <button id="avoidSleepToggle" class="setting-row sleep-toggle-row" type="button">
-                <span><span class="ui-icon" style="--icon:url('assets/icons/moon.svg')"></span> Éviter les prises pendant le sommeil</span>
+                <span><span class="ui-icon" style="--icon:url('moon.svg')"></span> Éviter les prises pendant le sommeil</span>
                 <span class="switch" id="sleepSwitch"><i></i></span>
               </button>
               <p class="sleep-status" id="sleepStatusText">Actif</p>
@@ -270,11 +270,11 @@
             </article>
             <article class="card settings-section">
               <h3>Apparence</h3>
-              <button id="settingsThemeToggle" class="setting-row"><span><span class="ui-icon" style="--icon:url('assets/icons/moon.svg')"></span> Mode clair / sombre</span><span class="switch" id="themeSwitch"><i></i></span></button>
+              <button id="settingsThemeToggle" class="setting-row"><span><span class="ui-icon" style="--icon:url('moon.svg')"></span> Mode clair / sombre</span><span class="switch" id="themeSwitch"><i></i></span></button>
             </article>
             <article class="card settings-section">
               <h3>Notifications</h3>
-              <button id="settingsNotificationToggle" class="setting-row"><span><span class="ui-icon" style="--icon:url('assets/icons/bell.svg')"></span> Rappels dans le navigateur</span><span class="switch" id="notificationSwitch"><i></i></span></button>
+              <button id="settingsNotificationToggle" class="setting-row"><span><span class="ui-icon" style="--icon:url('bell.svg')"></span> Rappels dans le navigateur</span><span class="switch" id="notificationSwitch"><i></i></span></button>
               <p class="setting-note">Les notifications web sont surtout fiables lorsque l’application est ouverte. Le navigateur peut appliquer ses propres restrictions.</p>
             </article>
             <article class="card settings-section">
@@ -289,10 +289,10 @@
       </main>
 
       <nav class="bottom-nav" aria-label="Navigation mobile">
-        <button class="nav-item active" data-nav="dashboard"><span class="ui-icon" style="--icon:url('assets/icons/house.svg')"></span><small>Accueil</small></button>
-        <button class="nav-item" data-nav="todo"><span class="ui-icon" style="--icon:url('assets/icons/check-square.svg')"></span><small>Todo</small></button>
-        <button class="nav-item" data-nav="timeline"><span class="ui-icon" style="--icon:url('assets/icons/hourglass-medium.svg')"></span><small>Timeline</small></button>
-        <button class="nav-item" data-nav="schedule"><span class="ui-icon" style="--icon:url('assets/icons/calendar-dots.svg')"></span><small>Horaire</small></button>
+        <button class="nav-item active" data-nav="dashboard"><span class="ui-icon" style="--icon:url('house.svg')"></span><small>Accueil</small></button>
+        <button class="nav-item" data-nav="todo"><span class="ui-icon" style="--icon:url('check-square.svg')"></span><small>Todo</small></button>
+        <button class="nav-item" data-nav="timeline"><span class="ui-icon" style="--icon:url('hourglass-medium.svg')"></span><small>Timeline</small></button>
+        <button class="nav-item" data-nav="schedule"><span class="ui-icon" style="--icon:url('calendar-dots.svg')"></span><small>Horaire</small></button>
         <button class="nav-item" id="moreNav"><span class="more-dots">•••</span><small>Plus</small></button>
       </nav>
     </div>
@@ -303,12 +303,12 @@
       <div class="sheet-handle"></div>
       <div class="sheet-header"><div><p class="section-label">Navigation</p><h2>Plus</h2></div><button class="icon-button" id="closeMoreSheet">×</button></div>
       <div class="more-grid">
-        <button data-nav="meds"><span class="ui-icon" style="--icon:url('assets/icons/pill.svg')"></span><span>Médicaments</span></button>
-        <button data-nav="symptoms"><span class="ui-icon" style="--icon:url('assets/icons/person-arms-spread.svg')"></span><span>Symptômes</span></button>
+        <button data-nav="meds"><span class="ui-icon" style="--icon:url('pill.svg')"></span><span>Médicaments</span></button>
+        <button data-nav="symptoms"><span class="ui-icon" style="--icon:url('person-arms-spread.svg')"></span><span>Symptômes</span></button>
         <button data-nav="instructions"><span class="moon-glyph">☾</span><span>Instructions</span></button>
-        <button data-nav="history"><span class="ui-icon" style="--icon:url('assets/icons/check-square.svg')"></span><span>Historique</span></button>
-        <button data-nav="stats"><span class="ui-icon" style="--icon:url('assets/icons/chart-bar.svg')"></span><span>Statistiques</span></button>
-        <button data-nav="settings"><span class="ui-icon" style="--icon:url('assets/icons/gear.svg')"></span><span>Paramètres</span></button>
+        <button data-nav="history"><span class="ui-icon" style="--icon:url('check-square.svg')"></span><span>Historique</span></button>
+        <button data-nav="stats"><span class="ui-icon" style="--icon:url('chart-bar.svg')"></span><span>Statistiques</span></button>
+        <button data-nav="settings"><span class="ui-icon" style="--icon:url('gear.svg')"></span><span>Paramètres</span></button>
       </div>
     </div>
   </div>

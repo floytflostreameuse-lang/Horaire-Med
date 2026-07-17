@@ -1,27 +1,27 @@
-const CACHE = 'luna-recovery-v3-sleep';
+const CACHE = 'luna-recovery-v4-flat';
 const ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './manifest.webmanifest',
-  './assets/icons/house.svg',
-  './assets/icons/check-square.svg',
-  './assets/icons/hourglass-medium.svg',
-  './assets/icons/calendar-dots.svg',
-  './assets/icons/pill.svg',
-  './assets/icons/person-arms-spread.svg',
-  './assets/icons/chart-bar.svg',
-  './assets/icons/gear.svg',
-  './assets/icons/bell.svg',
-  './assets/icons/plus.svg',
-  './assets/icons/moon.svg',
-  './assets/icons/sun.svg',
-  './assets/images/moon-lake.jpg',
-  './assets/images/star-nebula.webp',
-  './assets/images/milky-way.webp',
-  './assets/images/celestial-collage.webp',
-  './assets/images/watercolor-stars.jpg'
+  './house.svg',
+  './check-square.svg',
+  './hourglass-medium.svg',
+  './calendar-dots.svg',
+  './pill.svg',
+  './person-arms-spread.svg',
+  './chart-bar.svg',
+  './gear.svg',
+  './bell.svg',
+  './plus.svg',
+  './moon.svg',
+  './sun.svg',
+  './moon-lake.jpg',
+  './star-nebula.webp',
+  './milky-way.webp',
+  './celestial-collage.webp',
+  './watercolor-stars.jpg'
 ];
 
 self.addEventListener('install', (event) => {

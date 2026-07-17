@@ -25,9 +25,9 @@
   --topbar-h: 82px;
   --nav-h: 78px;
   --icon-color: currentColor;
-  --hero-image: url('assets/images/moon-lake.jpg');
-  --page-art: url('assets/images/milky-way.webp');
-  --texture-art: url('assets/images/star-nebula.webp');
+  --hero-image: url('moon-lake.jpg');
+  --page-art: url('milky-way.webp');
+  --texture-art: url('star-nebula.webp');
 }
 
 html[data-theme="light"] {
@@ -50,9 +50,9 @@ html[data-theme="light"] {
   --danger: #cc4f5a;
   --shadow: 0 24px 60px rgba(53, 71, 104, 0.16);
   --soft-shadow: 0 12px 28px rgba(53, 71, 104, 0.12);
-  --hero-image: url('assets/images/watercolor-stars.jpg');
-  --page-art: url('assets/images/watercolor-stars.jpg');
-  --texture-art: url('assets/images/star-nebula.webp');
+  --hero-image: url('watercolor-stars.jpg');
+  --page-art: url('watercolor-stars.jpg');
+  --texture-art: url('star-nebula.webp');
 }
 
 * { box-sizing: border-box; }
@@ -618,7 +618,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
   align-items: flex-end;
   background:
     linear-gradient(90deg, rgba(7,16,31,.86), rgba(7,16,31,.4)),
-    url('assets/images/celestial-collage.webp') center / cover;
+    url('celestial-collage.webp') center / cover;
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow);
 }
@@ -839,7 +839,7 @@ html[data-theme="light"] .nav-item.active { color: var(--accent); }
   .side-nav button { min-height: 48px; border: 0; border-radius: 14px; background: transparent; color: var(--muted); display: flex; align-items: center; gap: 12px; padding: 0 14px; text-align: left; }
   .side-nav button.active { background: linear-gradient(90deg, rgba(132,93,201,.2), rgba(194,105,159,.08)); color: var(--text); }
   .side-nav .ui-icon { width: 20px; height: 20px; }
-  .sidebar-art { min-height: 170px; margin: auto 12px 12px; border-radius: 24px; background: linear-gradient(180deg, transparent, rgba(6,13,25,.35)), url('assets/images/milky-way.webp') center / cover; border: 1px solid var(--border); }
+  .sidebar-art { min-height: 170px; margin: auto 12px 12px; border-radius: 24px; background: linear-gradient(180deg, transparent, rgba(6,13,25,.35)), url('milky-way.webp') center / cover; border: 1px solid var(--border); }
   .side-theme { margin: 0 12px 14px; min-height: 46px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-3); display: flex; align-items: center; gap: 10px; justify-content: center; }
   .mobile-app { min-width: 0; border-radius: 32px; margin-left: 18px; overflow: clip; min-height: calc(100vh - 36px); border: 1px solid var(--border); box-shadow: var(--shadow); }
   .topbar { padding-left: 34px; padding-right: 34px; }
